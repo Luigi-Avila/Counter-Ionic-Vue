@@ -41,6 +41,7 @@ export default {
     data: () => ({
         vuetifyComponents: [
             { title: 'Cards', icon: 'mdi-cards', goTo: '/cards'},
+            { title: 'Dialogs', icon: 'mdi-projector-screen-outline', goTo: '/dialogs'},
         ]
     }),
     setup: () => {

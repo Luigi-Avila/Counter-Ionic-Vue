@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import HomePage from '../views/HomePage.vue'
 import Tabs  from "../components/Tabs.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -31,7 +30,11 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'cards',
         component: () => import('../views/VuetifyComponents/Card.vue')
-      }
+      },
+      {
+        path: 'dialogs',
+        component: () => import('../views/VuetifyComponents/Dialog.vue')
+      },
     ],
   }
 ];
