@@ -23,9 +23,17 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'counter',
         component: () => import('../views/CounterPage.vue'),
+      },
+      {
+        path: 'vuetify',
+        component: () => import('../views/VuetifyPage.vue')
+      },
+      {
+        path: 'cards',
+        component: () => import('../views/VuetifyComponents/Card.vue')
       }
     ],
-  },
+  }
 ];
 
 

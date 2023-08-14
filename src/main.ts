@@ -23,15 +23,25 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-//Components
+//Local Components
 import BaseLayout from "./components/BaseLayout.vue";
 
+// Vuetify
+import { createVuetify } from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
+import '@mdi/font/css/materialdesignicons.css'; 
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
   
   app.component('baseLayout', BaseLayout)
+
+  const vuetify = createVuetify({
+    //Options
+  })
+
+  app.use(vuetify)
 
 router.isReady().then(() => {
   app.mount('#app');

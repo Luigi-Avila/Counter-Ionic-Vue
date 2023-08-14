@@ -4,14 +4,20 @@
             <ion-router-outlet></ion-router-outlet>
             <ion-tab-bar slot="bottom">
                 <ion-tab-button tab="home" href="/home">
-                    <ion-icon :icon="playCircle" />
+                    <ion-icon :icon="homeOutline" />
                     <ion-label>home</ion-label>
                 </ion-tab-button>
 
                 <ion-tab-button tab="counter" href="/counter">
-                    <ion-icon :icon="radio" />
+                    <ion-icon :icon="serverOutline" />
                     <ion-label>Counter</ion-label>
                 </ion-tab-button>
+
+                <ion-tab-button tab="vuetify" href="/vuetify">
+                    <ion-icon :icon="logoVue"></ion-icon>
+                    <ion-label>Vuetify</ion-label>
+                </ion-tab-button>
+
             </ion-tab-bar>
         </ion-tabs>
     </ion-page>
@@ -28,7 +34,7 @@ import {
     IonIcon,
 } from "@ionic/vue";
 
-import { playCircle, radio, library, search } from "ionicons/icons";
+import { homeOutline, serverOutline, logoVue } from "ionicons/icons";
 
 export default {
     components: {
@@ -42,10 +48,9 @@ export default {
     },
     data() {
         return {
-            playCircle,
-            radio,
-            library,
-            search,
+            homeOutline,
+            serverOutline,
+            logoVue
         };
     },
 };
