@@ -35,6 +35,10 @@ const routes: Array<RouteRecordRaw> = [
         path: 'dialogs',
         component: () => import('../views/VuetifyComponents/Dialog.vue')
       },
+      {
+        path: 'expansion-panel',
+        component: () => import('../views/VuetifyComponents/ExpansionPanel.vue')
+      }
     ],
   }
 ];
