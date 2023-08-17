@@ -38,6 +38,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'expansion-panel',
         component: () => import('../views/VuetifyComponents/ExpansionPanel.vue')
+      },
+      {
+        path: 'spacex',
+        component: () => import('../views/SpaceX.vue')
       }
     ],
   }

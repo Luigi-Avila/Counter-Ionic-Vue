@@ -5,7 +5,7 @@
             <ion-tab-bar slot="bottom">
                 <ion-tab-button tab="home" href="/home">
                     <ion-icon :icon="homeOutline" />
-                    <ion-label>home</ion-label>
+                    <ion-label>Home</ion-label>
                 </ion-tab-button>
 
                 <ion-tab-button tab="counter" href="/counter">
@@ -16,6 +16,11 @@
                 <ion-tab-button tab="vuetify" href="/vuetify">
                     <ion-icon :icon="logoVue"></ion-icon>
                     <ion-label>Vuetify</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button tab="spacex" href="/spacex">
+                    <ion-icon :icon="rocket"></ion-icon>
+                    <ion-label>Space X</ion-label>
                 </ion-tab-button>
 
             </ion-tab-bar>
@@ -34,7 +39,7 @@ import {
     IonIcon,
 } from "@ionic/vue";
 
-import { homeOutline, serverOutline, logoVue } from "ionicons/icons";
+import { homeOutline, serverOutline, logoVue, rocket } from "ionicons/icons";
 
 export default {
     components: {
@@ -50,6 +55,7 @@ export default {
         return {
             homeOutline,
             serverOutline,
+            rocket,
             logoVue
         };
     },
